@@ -21,13 +21,13 @@ export default function DifficultySelector() {
               Component: <Emoji label="happy" symbol="🥳"/>
             </div>
             <Link to="/Game/easy">
-              <button class="gradient-button" value="Game/easy">Easy</button>
+              <button className="gradient-button" value="Game/easy">Easy</button>
             </Link>
-            <Link class="gradient-button" to="/Game/medium">
-              <button value="Game/medium">Medium</button>
+            <Link to="/Game/medium">
+              <button className="gradient-button" value="Game/medium">Medium</button>
             </Link>
-            <Link class="gradient-button" to="/Game/hard">
-              <button value="Game/hard">Hard</button>
+            <Link to="/Game/hard">
+              <button className="gradient-button" value="Game/hard">Hard</button>
             </Link> 
         </div>
     </div>

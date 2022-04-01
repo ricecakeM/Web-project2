@@ -77,11 +77,10 @@ export default function Wordle() {
       <div className='input-box'>
         <div>
           <SubmitBox />
-          <div style={{color:"red"}}>
+          <div className='game-instruction'>
               You have {count} attempt(s) left
           </div>
           <WordChecker />
-          <div>answer: {answer}</div>
           <button className='reset' onClick={() => {window.location.reload();}}>Reset</button>
         </div>
       </div>
@@ -91,8 +90,8 @@ export default function Wordle() {
   if (count === 0) {
     return (
       <div className='input-box'>
-        <div> Sorry, you lose. No more chances.</div>
-        <div> The correct answer is {answer} </div>
+        <div className='game-instruction'> Sorry, you lose. No more chances.</div>
+        <div className='game-instruction'> The correct answer is <span className='single-span'>{answer}</span> </div>
         <button className='reset' onClick={() => {window.location.reload();}}>Reset</button>
       </div>
     )

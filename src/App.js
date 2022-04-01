@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './App.css'
+import Home from './Home';
 
 function App() {
   return (
@@ -14,16 +15,19 @@ function App() {
       <div className='app'>
         <Navbar className='nav-color' variant={'light'} >
           <Container>
-            <Navbar.Brand as={Link} to={"/game"}>Home</Navbar.Brand>
+            <Navbar.Brand as={Link} to={"/"}>Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to={"/gamerule"}>Game Rule</Nav.Link>
+                <Nav.Link as={Link} to={"/GameRule"}>Game Rule</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path='/Game/:type'>
             <Wordle />
           </Route>

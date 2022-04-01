@@ -13,15 +13,13 @@ export default function GameRule() {
     </div>
     <div className="rules">
       <p>Wordle is such a simple game that there are hardly any rules:</p>
-      <ul>
-        <li>Select one of 3 difficulties for this game </li>
-        <li>You have to guess the Wordle</li>
-        <li>Every word you enter must be in the word list</li>
-        <li>A correct letter turns green</li>
-        <li>A correct letter in the wrong place turns yellow</li>
-        <li>An incorrect letter turns gray</li>
-        <li>Letters can be used more than once</li>
-      </ul>
+      <p>💪 Select one of 3 difficulties for this game</p>
+      <p>💪 You have to guess the Wordle</p>
+      <p>💪 Every word you enter must be in the word list</p>
+      <p>💪 A correct letter turns green</p>
+      <p>💪 A correct letter in the wrong place turns yellow</p>
+      <p>💪 An incorrect letter turns gray</p>
+      <p>💪 Letters can be used more than once</p>
     </div>
   </div>
   )

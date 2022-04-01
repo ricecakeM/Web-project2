@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css'
 
@@ -18,7 +18,7 @@ export default function DifficultySelector() {
           <div>
             <div className='game-instruction'>
               Please select the difficulty of the game. 
-              Component: <Emoji label="happy" symbol="🥳"/>
+              <Emoji label="happy" symbol="🥳"/>
             </div>
             <Link to="/Game/easy">
               <button className="gradient-button" value="Game/easy">Easy</button>

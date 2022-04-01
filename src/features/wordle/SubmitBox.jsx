@@ -36,6 +36,10 @@ export default function SubmitBox() {
           <WordValidator callback={setCong} />
           <form className='input-box' onSubmit={handleSubmit}>
               <input className='input-field' onChange={getInput} placeholder={content} disabled={cong}></input>
+              <div>
+                <button className='button' type="submit" disabled={cong}>Submit</button>
+              </div>   
           </form>
-          <button className='button' type="submit" disabled={cong}>Submit</button>
-      </div>)}
+      </div>
+  )
+}

@@ -13,6 +13,12 @@
   position: relative; /* 2 */
 }
 
+@media screen and (max-width: 800px) {
+  div .rules {
+    max-width: 80%;
+  }
+}
+
 .rules{
   display: inline-block;
   text-align: left;
@@ -28,4 +34,3 @@
   border-left: 8px solid red;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
